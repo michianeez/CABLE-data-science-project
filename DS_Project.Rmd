@@ -44,3 +44,15 @@ sumdass <- spmentalhealth %>% group_by(pp.number) %>% summarise(sumdass = sum(Re
 pinfo <- inner_join(sumdass, mentalhealth) %>% select(pp.number, age, gender, year, sumdass)
 ```
 
+**Method; Participant demographics table**
+```{r}
+pinfo %>% 
+  group_by(year) %>%
+  summarise(participant = n(),
+            mean_age = mean(age) %>% round(1),
+            sd_age = sd(age)%>% round(1))
+
+
+            
+```
+
