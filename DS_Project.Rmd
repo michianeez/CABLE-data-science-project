@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Loading packages and read in data**
 ```{r}
-library(tidyverse)
+library(tidyverse)s
 library(broom)
 
 mentalhealth <- read.csv("Toth_Faherty_Mazaheri_Raymond_data.csv")
